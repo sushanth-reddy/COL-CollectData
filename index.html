@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>COL Additional Data Collection Application</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="lib/fhir-client-0.1.8.js"></script>
+     <script src="lib/jquery-3.3.1.js"></script>
+     <link href="css/bootstrap.css" rel="stylesheet">
+     <link href="css/bootstrap-toggle.css" rel="stylesheet">
+     <script src="lib/bootstrap-toggle.js"></script>
+     <link href="css/custom.css" rel="stylesheet">
+     <script src="js/config.js"></script>
+ </head>
+ <body>
+ <div class="wine-row">
+     <img src="images/logo.jpg" style="height:100px; width:150px">
+     <div class="wine-text-container"><h1>COL Additional Data Collection Application</h1></div>
+ </div>
+ <div id="intro-screen" class="card alert-info screen">
+     <div class="card-body">
+         <h5 class="card-title">Scenario Description</h5>
+         <p class='card-text' id='scenario-intro'></p>
+         <a href="#" class="btn btn-primary" id="btn-start">Select Patients</a>
+     </div>
+ </div>
+    <div id="selection-screen" class="screen">
+        <h3>Select Patients</h3>
+        <div><p><div class='dvt'>
+            <table class='table'>
+                <thead>
+                <tr>
+                    <th>Patient Name</th>
+                    <th>Choose</th>
+                </tr>
+                </thead>
+                <tbody id='selection-list'>
+                <tr><td><img src="images/glow.gif" id="spinner" style="height:400px; width:500px"></td></tr>
+                </tbody>
+            </table>
+            </div></p>
+        </div>
+        <button type="button" class="btn btn-secondary" id="btn-review">Review</button>
+    </div>
+    <div id="review-screen" class="screen">
+        <h3>Review Patients</h3>
+        <div id="review-lists"><p><div class='dvt'>
+            <table class='table alert-warning'>
+                <thead>
+                <tr>
+                    <th>Patient Name</th>
+                </tr>
+                </thead>
+                <tbody id='final-list'>
+
+                </tbody>
+            </table>
+        </div></p></div>
+        <div>
+            <button type="button" class="btn btn-secondary" id="btn-edit">Edit requests</button>
+            <button type="button" class="btn btn-secondary" id="btn-configuration">Configure endpoint</button>
+            <button type="button" class="btn btn-primary" id="btn-submit">Request data</button>
+        </div>
+    </div>
+    <div id="confirm-screen" class="screen">
+        <div class="card alert-info card-body">
+            <h5 class="card-title">Confirmation</h5>
+            <p class="card-text">Collect data wass successfully executed. </p>
+            <p class="card-text">  You can close this window now.</p>
+        </div>
+        <div id="measure-lists"><p><div class='dvt'>
+            <table class='table alert-warning'>
+                <tbody id='measure-list'></tbody>
+            </table>
+        </div></p></div>
+    </div>
+    <div id="config-screen" class="card alert-info screen">
+        <div class="card-body">
+            <h5 class="card-title">COL Endpoint Configuration</h5>
+            <p class='card-text'>
+                <p>
+                    <select class='custom-select' id='config-select'></select>
+                </p>
+                <p>
+                    <textarea id="config-text"></textarea>
+                </p>
+            </p>
+            <a href="#" class="btn btn-primary" id="btn-config">Save configuration</a>
+        </div>
+    </div>
+    <div id="error-screen" class="card alert-danger screen">
+        <div class="card-body">
+            <h5 class="card-title" id='error-title'>Error</h5>
+            <p class='card-text' id='error-message'></p>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+ </body>
+</html>

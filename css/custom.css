@@ -1,0 +1,46 @@
+body {
+    margin: 20px;
+}
+
+.medtd {
+    width: 350px;
+}
+
+td {
+    vertical-align: middle;
+}
+
+#chk-post-discharge {
+    margin-left: 10px;
+}
+
+#intro-screen, #confirm-screen, #config-screen, .dvt {
+    align-self: center;
+    width: 700px;
+}
+
+.screen, #medrec-meds {
+    display: none;
+}
+
+#config-text {
+    width: 660px;
+    height: 200px;
+}
+
+input{
+    data-toggle: toggle;
+}
+
+.wine-row {
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    padding: 10px 0;
+}
+
+.wine-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
