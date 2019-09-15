@@ -6,14 +6,10 @@ if (!COL) {
 (function () {
 
   COL.scenarioDescription = {
-      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n" +
-          "            sed do eiusmod tempor incididunt ut labore et dolore magna\n" +
-          "            aliqua. Ut enim ad minim veniam, quis nostrud exercitation\n" +
-          "            ullamco laboris nisi ut aliquip ex ea commodo consequat.\n" +
-          "            Duis aute irure dolor in reprehenderit in voluptate velit\n" +
-          "            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint\n" +
-          "            occaecat cupidatat non proident, sunt in culpa qui officia\n" +
-          "            deserunt mollit anim id est laborum."
+      "description" : "Payer/Aggregator retrieves Colorectal Cancer Screening"+
+      " Data from Provider using the Collect Data operation. The Provider "+
+      "returns the MeasureReport and referenced resources as supporting "+
+      "evidence for Colorectal Cancer Screening."
   };
   COL.clientSettings = {
     "client_id": "app-login",
